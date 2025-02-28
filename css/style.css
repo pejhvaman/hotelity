@@ -39,6 +39,23 @@ body {
   color: var(--color-grey-dark-2);
 }
 
+.logo {
+  width: 5rem;
+}
+
+.search__icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+.user-nav__icon {
+  width: 3.2rem;
+  height: 3.2rem;
+}
+.user-nav__user-image {
+  width: 4rem;
+  border-radius: 50%;
+}
 .container {
   background-color: var(--color-grey-light-1);
   max-width: 120rem;

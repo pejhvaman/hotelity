@@ -1,0 +1,42 @@
+////////////////////////////////////////
+/// LOGO
+.logo {
+  width: 5rem;
+}
+
+.search {
+  &__field {
+  }
+
+  &__button {
+  }
+
+  &__icon {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+.user-nav {
+  &__box {
+  }
+
+  &__icon {
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+
+  &__notif {
+  }
+
+  &__user {
+  }
+
+  &__user-image {
+    width: 4rem;
+    border-radius: 50%;
+  }
+
+  &__user-name {
+  }
+}
