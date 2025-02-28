@@ -2,18 +2,59 @@
 /// LOGO
 .logo {
   width: 5rem;
+  margin-left: 3rem;
 }
 
 .search {
+  font-size: 1.4rem;
+  display: flex;
+  flex: 0 0 40%;
+  justify-content: center;
+  align-items: center;
+
   &__field {
+    border: none;
+    border-radius: 100px;
+    background-color: var(--color-grey-light-2);
+    font-size: inherit;
+    font-family: inherit;
+    color: inherit;
+    margin-right: -3rem;
+    width: 90%;
+    padding: 0.7rem 2rem;
+    transition: all 0.3s;
+
+    &:focus {
+      outline: none;
+      background-color: var(--color-grey-light-3);
+      width: 100%;
+    }
+  }
+
+  &__field:focus + &__button {
+    background-color: var(--color-grey-light-3);
+  }
+
+  &__field::placeholder {
+    font-size: inherit;
+    color: var(--color-grey-dark-3);
   }
 
   &__button {
+    background-color: var(--color-grey-light-2);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
   }
 
   &__icon {
     width: 2rem;
     height: 2rem;
+    fill: var(--color-grey-dark-2);
+
+    &:active {
+      transform: translateY(2px);
+    }
   }
 }
 
