@@ -1,20 +1,3 @@
-/*
-COLORS
-
-Primary: #7209b7
-Primary light: #b439ff
-Primary dark: #430074
-
-Grey light 1: #faf9f9
-Grey light 2: #f4f2f2
-Grey light 3: #f0eeee
-Grey light 4: #ccc
-
-Grey dark 1: #333
-Grey dark 2: #777
-Grey dark 3: #999
-
-*/
 :root {
   --color-primary: #7209b7;
   --color-primary-light: #b439ff;
@@ -26,6 +9,7 @@ Grey dark 3: #999
   --color-grey-dark-1: #333;
   --color-grey-dark-2: #777;
   --color-grey-dark-3: #999;
+  --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
 }
 
 * {
@@ -53,6 +37,36 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   color: var(--color-grey-dark-2);
+}
+
+.container {
+  background-color: var(--color-grey-light-1);
+  max-width: 120rem;
+  margin: 4rem auto;
+  border-radius: 4px;
+  box-shadow: var(--shadow-dark);
+  overflow: hidden;
+  min-height: 50rem;
+}
+
+.header {
+  background-color: #fff;
+  height: 7rem;
+  border-bottom: 1px solid var(--color-grey-light-2);
+}
+
+.content {
+  display: flex;
+}
+
+.sidebar {
+  background-color: var(--color-grey-dark-1);
+  flex: 0 0 18%;
+}
+
+.hotel-view {
+  background-color: #fff;
+  flex: 1;
 }
 
 /*# sourceMappingURL=style.css.map */
