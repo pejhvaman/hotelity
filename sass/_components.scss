@@ -180,3 +180,48 @@
   padding: 1.5rem;
   text-align: center;
 }
+
+/////////////////////////////
+/// Gallery
+.gallery {
+  display: flex;
+
+  &__photo {
+    display: block;
+    width: 100%;
+  }
+}
+
+/////////////////////////////
+/// HOTEL OVERVIEW
+.overview {
+  display: flex;
+
+  &__heading {
+    font-size: 2.6rem;
+    color: var(--color-grey-dark-3);
+  }
+
+  &__stars {
+    margin-right: auto;
+  }
+
+  &__icon--star,
+  &__icon--location {
+    width: 1.6rem;
+    height: 1.6rem;
+    fill: var(--color-primary-light);
+  }
+
+  &__location {
+  }
+
+  &__rating {
+  }
+
+  &__rating--count {
+  }
+
+  &__rating--percent {
+  }
+}

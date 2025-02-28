@@ -189,6 +189,29 @@ body {
   text-align: center;
 }
 
+.gallery {
+  display: flex;
+}
+.gallery__photo {
+  display: block;
+  width: 100%;
+}
+
+.overview {
+  display: flex;
+}
+.overview__heading {
+  font-size: 2.6rem;
+  color: var(--color-grey-dark-3);
+}
+.overview__stars {
+  margin-right: auto;
+}
+.overview__icon--star, .overview__icon--location {
+  width: 1.6rem;
+  height: 1.6rem;
+  fill: var(--color-primary-light);
+}
 .container {
   background-color: var(--color-grey-light-1);
   max-width: 120rem;
