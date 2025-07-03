@@ -58,3 +58,15 @@
   justify-content: space-between;
   align-items: center;
 }
+
+.cta {
+  text-align: center;
+  padding: 3rem 0;
+
+  &__heading {
+    font-size: 2rem;
+    font-weight: 200;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+  }
+}
