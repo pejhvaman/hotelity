@@ -122,13 +122,27 @@
   margin-top: 3rem;
   font-size: 1.3rem;
 
+  @media only screen and (max-width: $bp-medium) {
+    margin: 0;
+    display: flex;
+  }
+
   &__item {
     padding: 1rem 2rem;
     cursor: pointer;
     position: relative;
 
+    @media only screen and (max-width: $bp-medium) {
+      flex: 1;
+      padding: 2rem;
+    }
+
     &:not(:last-child) {
       margin-bottom: 0.5rem;
+
+      @media only screen and (max-width: $bp-medium) {
+        margin: 0;
+      }
     }
   }
 
@@ -165,6 +179,10 @@
     align-items: center;
     position: relative;
     z-index: 10;
+
+    @media only screen and (max-width: $bp-medium) {
+      justify-content: center;
+    }
   }
 
   &__icon {
@@ -179,6 +197,10 @@
   color: var(--color-grey-light-4);
   padding: 1.5rem;
   text-align: center;
+
+  @media only screen and (max-width: $bp-medium) {
+    display: none;
+  }
 }
 
 /////////////////////////////
@@ -373,6 +395,14 @@
   border-radius: 4px;
   position: relative;
   overflow: hidden;
+
+  @media only screen and (max-width: $bp-medium) {
+    margin-bottom: 0;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    padding: 2rem;
+  }
 
   &__text {
     margin-bottom: 3rem;
