@@ -3,6 +3,10 @@
 .logo {
   width: 5rem;
   margin-left: 2rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    width: 4rem;
+  }
 }
 
 ////////////////////////////////////////
@@ -13,6 +17,12 @@
   flex: 0 0 40%;
   justify-content: center;
   align-items: center;
+
+  @media only screen and (max-width: $bp-medium) {
+    order: 1;
+    flex: 0 0 100%;
+    background-color: var(--color-grey-light-2);
+  }
 
   &__field {
     border: none;
@@ -122,13 +132,31 @@
   margin-top: 3rem;
   font-size: 1.3rem;
 
+  @media only screen and (max-width: $bp-medium) {
+    margin: 0;
+    display: flex;
+  }
+
   &__item {
     padding: 1rem 2rem;
     cursor: pointer;
     position: relative;
 
+    @media only screen and (max-width: $bp-medium) {
+      flex: 1;
+      padding: 2rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      padding: 1.5rem;
+    }
+
     &:not(:last-child) {
       margin-bottom: 0.5rem;
+
+      @media only screen and (max-width: $bp-medium) {
+        margin: 0;
+      }
     }
   }
 
@@ -165,6 +193,14 @@
     align-items: center;
     position: relative;
     z-index: 10;
+
+    @media only screen and (max-width: $bp-medium) {
+      justify-content: center;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      flex-direction: column;
+    }
   }
 
   &__icon {
@@ -172,6 +208,11 @@
     height: 2rem;
     fill: currentColor;
     margin-right: 1.6rem;
+
+    @media only screen and (max-width: $bp-small) {
+      margin-right: 0;
+      margin-bottom: 0.4rem;
+    }
   }
 }
 
@@ -179,6 +220,10 @@
   color: var(--color-grey-light-4);
   padding: 1.5rem;
   text-align: center;
+
+  @media only screen and (max-width: $bp-medium) {
+    display: none;
+  }
 }
 
 /////////////////////////////
@@ -204,6 +249,11 @@
     font-size: 2.25rem;
     font-weight: 400;
     padding: 1.25rem 3rem;
+
+    @media only screen and (max-width: $bp-small) {
+      padding: 1rem 2rem;
+      font-size: 1.8rem;
+    }
   }
 
   &__stars {
@@ -235,15 +285,27 @@
     align-items: center;
     color: #fff;
     margin-left: 1.25rem;
+
+    @media only screen and (max-width: $bp-small) {
+      padding: 0 1rem;
+    }
   }
 
   &__rating--percent {
     font-size: 2.25rem;
     margin-bottom: -0.3rem;
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: 1.8rem;
+    }
   }
 
   &__rating--count {
     text-transform: uppercase;
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: 0.8rem;
+    }
   }
 }
 
@@ -357,6 +419,11 @@
     border-radius: 50%;
     border: 3px solid #fff;
 
+    @media only screen and (max-width: $bp-medium) {
+      width: 3.5rem;
+      height: 3.5rem;
+    }
+
     &:not(:last-child) {
       margin-right: -0.9rem;
     }
@@ -373,6 +440,20 @@
   border-radius: 4px;
   position: relative;
   overflow: hidden;
+  width: 100%;
+
+  @media only screen and (max-width: $bp-medium) {
+    margin-bottom: 0;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    padding: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  @media only screen and (max-width: $bp-mobile) {
+    margin-bottom: 1.8rem;
+  }
 
   &__text {
     margin-bottom: 3rem;
@@ -454,10 +535,18 @@
     text-transform: uppercase;
     font-size: 2rem;
     font-weight: 300;
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: 1.6rem;
+    }
   }
 
   &__visible {
     padding: 1.5rem 4rem;
+
+    @media only screen and (max-width: $bp-small) {
+      padding: 1rem 3rem;
+    }
   }
 
   &__invisible {
