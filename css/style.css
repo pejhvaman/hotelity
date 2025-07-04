@@ -51,6 +51,11 @@ body {
   width: 5rem;
   margin-left: 2rem;
 }
+@media only screen and (max-width: 53.75em) {
+  .logo {
+    width: 4rem;
+  }
+}
 
 .search {
   font-size: 1.4rem;
@@ -58,6 +63,13 @@ body {
   flex: 0 0 40%;
   justify-content: center;
   align-items: center;
+}
+@media only screen and (max-width: 53.75em) {
+  .search {
+    order: 1;
+    flex: 0 0 100%;
+    background-color: var(--color-grey-light-2);
+  }
 }
 .search__field {
   border: none;
@@ -166,6 +178,11 @@ body {
     padding: 2rem;
   }
 }
+@media only screen and (max-width: 40.625em) {
+  .side-nav__item {
+    padding: 1.5rem;
+  }
+}
 .side-nav__item:not(:last-child) {
   margin-bottom: 0.5rem;
 }
@@ -206,11 +223,22 @@ body {
     justify-content: center;
   }
 }
+@media only screen and (max-width: 40.625em) {
+  .side-nav__link:link, .side-nav__link:visited {
+    flex-direction: column;
+  }
+}
 .side-nav__icon {
   width: 2rem;
   height: 2rem;
   fill: currentColor;
   margin-right: 1.6rem;
+}
+@media only screen and (max-width: 40.625em) {
+  .side-nav__icon {
+    margin-right: 0;
+    margin-bottom: 0.4rem;
+  }
 }
 
 .legal {
@@ -243,6 +271,12 @@ body {
   font-weight: 400;
   padding: 1.25rem 3rem;
 }
+@media only screen and (max-width: 40.625em) {
+  .overview__heading {
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
+  }
+}
 .overview__stars {
   margin-right: auto;
   display: flex;
@@ -269,12 +303,27 @@ body {
   color: #fff;
   margin-left: 1.25rem;
 }
+@media only screen and (max-width: 40.625em) {
+  .overview__rating {
+    padding: 0 1rem;
+  }
+}
 .overview__rating--percent {
   font-size: 2.25rem;
   margin-bottom: -0.3rem;
 }
+@media only screen and (max-width: 40.625em) {
+  .overview__rating--percent {
+    font-size: 1.8rem;
+  }
+}
 .overview__rating--count {
   text-transform: uppercase;
+}
+@media only screen and (max-width: 40.625em) {
+  .overview__rating--count {
+    font-size: 0.8rem;
+  }
 }
 
 .btn-inline {
@@ -366,6 +415,12 @@ body {
   border-radius: 50%;
   border: 3px solid #fff;
 }
+@media only screen and (max-width: 53.75em) {
+  .recommend__avatar {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+}
 .recommend__avatar:not(:last-child) {
   margin-right: -0.9rem;
 }
@@ -378,6 +433,7 @@ body {
   border-radius: 4px;
   position: relative;
   overflow: hidden;
+  width: 100%;
 }
 @media only screen and (max-width: 53.75em) {
   .review {
@@ -387,6 +443,12 @@ body {
 @media only screen and (max-width: 40.625em) {
   .review {
     padding: 2rem;
+    margin-bottom: 3rem;
+  }
+}
+@media only screen and (max-width: 25.625em) {
+  .review {
+    margin-bottom: 1.8rem;
   }
 }
 .review__text {
@@ -455,8 +517,18 @@ body {
   font-size: 2rem;
   font-weight: 300;
 }
+@media only screen and (max-width: 40.625em) {
+  .btn span {
+    font-size: 1.6rem;
+  }
+}
 .btn__visible {
   padding: 1.5rem 4rem;
+}
+@media only screen and (max-width: 40.625em) {
+  .btn__visible {
+    padding: 1rem 3rem;
+  }
 }
 .btn__invisible {
   position: absolute;
@@ -500,6 +572,13 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+@media only screen and (max-width: 31.25em) {
+  .header {
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    height: 11rem;
+  }
+}
 
 .content {
   display: flex;
@@ -538,7 +617,12 @@ body {
 }
 @media only screen and (max-width: 40.625em) {
   .details {
-    padding: 2rem;
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 25.625em) {
+  .details {
+    padding: 1.8rem;
   }
 }
 
@@ -556,7 +640,14 @@ body {
 }
 @media only screen and (max-width: 40.625em) {
   .description {
-    padding: 1.5rem;
+    margin-right: 0;
+    margin-bottom: 3rem;
+  }
+}
+@media only screen and (max-width: 25.625em) {
+  .description {
+    padding: 1.8rem;
+    margin-bottom: 1.8rem;
   }
 }
 
@@ -571,13 +662,18 @@ body {
 
 .cta {
   text-align: center;
-  padding: 3rem 0;
+  padding-top: 3rem;
 }
 .cta__heading {
   font-size: 2rem;
   font-weight: 200;
   margin-bottom: 1rem;
   text-transform: uppercase;
+}
+@media only screen and (max-width: 40.625em) {
+  .cta__heading {
+    font-size: 1.5rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
